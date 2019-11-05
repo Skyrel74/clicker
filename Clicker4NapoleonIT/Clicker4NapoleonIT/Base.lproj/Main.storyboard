@@ -18,28 +18,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hcg-Is-win">
-                                <rect key="frame" x="166" y="323" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hcg-Is-win">
+                                <rect key="frame" x="174.5" y="317.5" width="26" height="52"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eTl-BB-ZWE">
-                                <rect key="frame" x="155.5" y="637" width="64" height="30"/>
+                                <rect key="frame" x="120.5" y="589" width="134" height="58"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="35"/>
                                 <state key="normal" title="Push me!">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="click:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RBZ-zI-jVV"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="eTl-BB-ZWE" secondAttribute="bottom" id="4kv-2P-FOJ"/>
+                            <constraint firstItem="eTl-BB-ZWE" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="3ws-O8-Tg8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" relation="greaterThanOrEqual" secondItem="hcg-Is-win" secondAttribute="bottom" constant="-477" id="5gv-B9-3ib"/>
                             <constraint firstItem="hcg-Is-win" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="MZD-sK-147"/>
                             <constraint firstItem="hcg-Is-win" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Pay-iG-o0F"/>
-                            <constraint firstItem="eTl-BB-ZWE" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ilY-q0-LQU"/>
+                            <constraint firstItem="hcg-Is-win" firstAttribute="top" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="5" id="XOJ-Td-hKc"/>
+                            <constraint firstItem="hcg-Is-win" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="mD9-dN-ThG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="hcg-Is-win" secondAttribute="trailing" constant="10" id="vmQ-Lw-c9b"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="eTl-BB-ZWE" secondAttribute="bottom" constant="20" id="zBu-Ex-WEC"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
